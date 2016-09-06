@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我画你猜</title>
+    <link href="css/websocketGame.css" rel="stylesheet">
+</head>
+<body>
+    <section id="game">
+        <h1>我画你猜</h1>
+            <canvas id="drawing-pad" width="800" height="400">
+        </canvas>
+        <div id="colorPanel">
+            <input type="button"  class="panel" style="background-color: yellow;border:5px solid lightyellow"id="yellow">
+            <input type="button"  class="panel"  style="background-color: #000000;border:5px solid lightyellow"id="black">
+            <input type="button"  class="panel"  style="background-color: #800080;border:5px solid  lightyellow"id="zise">
+            <input type="button"  class="panel" style="background-color: red;border:5px solid lightyellow" id="red">
+            <input type="button" class="panel"  style="background-color: green;border:5px solid lightyellow" id="green">
+            <input type="button" class="panel"  style="background-color: blue;border:5px solid lightyellow" id="blue">
+            <input type="button" class="panel"  style="background-color: aqua;border:5px solid lightyellow" id="aqua">
+        </div>
+        <div id="brush_width">
+         <input type="button" style="background-color: black" id="width_10px" class="brushWidth">
+            <input type="button" style="background-color: black" id="width_20px" class="brushWidth">
+            <input type="button" style="background-color: black" id="width_40px" class="brushWidth">
+        </div>
+        <div id="send_area">
+            <input type="text" class="text">
+            <input type="button" value="发送" class="send">
+            <input type="button" value="重画" class="send" id="reDraw">
+        </div>
+    </section>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="js/CanvansGame.js"></script>
+    <script src="js/dataType.js"></script>
+</body>
+</html>
